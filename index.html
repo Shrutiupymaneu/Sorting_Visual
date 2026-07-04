@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sorting Algorithm Visualizer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="app">
+    <header>
+      <h1>Sorting Algorithm Visualizer</h1>
+      <p>Visualize sorting algorithms using animated number blocks</p>
+    </header>
+
+    <section class="top-info">
+      <div class="pill">
+        <span>Status</span>
+        <strong id="statusText">Ready</strong>
+      </div>
+
+      <div class="pill">
+        <span>Comparisons</span>
+        <strong id="comparisonCount">0</strong>
+      </div>
+    </section>
+
+    <section class="visual-area">
+      <div id="arrayContainer" class="array-container"></div>
+    </section>
+
+    <section class="controls">
+      <button id="generateArrayBtn">Generate New Array</button>
+
+      <div class="slider-box">
+        <label>Array Size: <span id="arraySizeValue">30</span></label>
+        <input type="range" id="arraySize" min="10" max="60" value="30" />
+      </div>
+
+      <div class="slider-box">
+        <label>Speed: <span id="speedValue">50</span></label>
+        <input type="range" id="speed" min="1" max="100" value="50" />
+      </div>
+
+      <div class="algorithm-buttons">
+        <button class="sort-btn" id="bubbleSortBtn">Bubble Sort</button>
+        <button class="sort-btn" id="selectionSortBtn">Selection Sort</button>
+        <button class="sort-btn" id="insertionSortBtn">Insertion Sort</button>
+        <button class="sort-btn" id="mergeSortBtn">Merge Sort</button>
+        <button class="sort-btn" id="quickSortBtn">Quick Sort</button>
+      </div>
+
+      <button id="resetBtn" class="reset-btn">Stop / Reset</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
